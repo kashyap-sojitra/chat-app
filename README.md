@@ -1,1 +1,14 @@
-# chat-app
+## Running the Project
+- clone the repo on your local with name "chat-app"
+- cd chat-app
+- node-version `14.17.1`
+- yarn-version `1.22.19`
+- `yarn`
+- Have a Redis instance running
+- Have a PostreSQL db running
+- Please update the sequelize config at packages/server/config/config.json
+- make `.env` in client folder and define `REACT_APP_SERVER_URL="http://localhost:4000"`
+- make `.env` in server folder and define `CLIENT_URL="http://localhost:3000" JWT_SECRET="test1234" DATABASE_HOST="localhost" DATABASE_NAME={your database name} DATABASE_USER={your database user} DATABASE_PASSWORD={your database password}`
+- cd packages/server/
+- Run the command: sequelize db:migrate
+- Run `yarn dev:server` and `yarn dev:client` at the root level

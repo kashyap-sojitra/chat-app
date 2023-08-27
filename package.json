@@ -1,0 +1,23 @@
+{
+  "author": "Kashyap Sojitra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "yarn workspace @chat-app/server dev",
+    "dev:client": "yarn workspace @chat-app/client start"
+  },
+  "volta": {
+    "node": "14.17.1",
+    "yarn": "1.22.19"
+  },
+  "dependencies": {
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.1"
+  }
+}
